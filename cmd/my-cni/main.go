@@ -40,9 +40,9 @@ func cmdAdd(args *skel.CmdArgs) error {
     containerVeth := args.Ifname
     veth := &netlink.Veth{
 	    Link.Atrrs: netlink.LinkAttrs{
-		   Name=hostVethName,
-	   }
-	   Peer=containerVeth,
+		    Name: hostVethName,
+	   },
+	   Peer: containerVeth,
     }
 
     if err := netlink.LinkAdd(veth); err != nil{
