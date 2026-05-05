@@ -1,0 +1,16 @@
+{
+  "nodeName": "node-1",
+  "gateway": "10.0.0.1",
+  "nodes": [
+    {
+      "name": "node-1",
+      "podCIDR": "10.244.1.0/24",
+      "internalIP": "192.168.1.11"
+    },
+    {
+      "name": "node-2",
+      "podCIDR": "10.244.2.0/24",
+      "internalIP": "192.168.1.12"
+    }
+  ]
+}
